@@ -130,7 +130,78 @@
 // console.log(`${a} is my friend`)
 
 
+// let a = "Hammad  "
+// console.log(a.toUpperCase())
+// console.log(a.slice(1,3))
+// console.log(a.replace("amm","AMM"))
+// console.log(a.concat(" hammad"))
+// console.log(a.trim())
+// console.log(a[0])
+// console.log(a + "hmmm")
+// a[0] = "A"  // This is not possible
+// console.log(a)
 
+// Arrays
+// let a = [1,11,2,"Hammad"]
+// console.log(a[1])
+// console.log(a.length)
+// a[3] = 8
+// console.log(a)
+// b = a.toString()
+// console.log(b)
+// let c = a.join("-")
+// console.log(c)
+// //let d = a.pop()
+// //a.push("55")
+// //a.shift()
+// //a.unshift(99)
+// console.log(a)
+// let a1 = [1,2,3]
+// console.log(a.concat(a1))
+// console.log(a.sort())   // sort method sort the numbers alphabetically that's why 11 comes before 2 because 1 comes before 2 and every number starts with 1 comes before 2
+
+// let compare = (a,b)=>{
+//     return b - a
+// }
+// console.log(a.sort(compare))
+// console.log(a.reverse())
+// console.log(a.splice(0,1,21))  // start index,remove index, add numbers
+// console.log(a1.slice(1))  // return numbers from index 1
+
+// let a = [1,2,3,4,5,6]
+// a.forEach((element)=>{
+//     console.log(element * 2)
+// })
+// let name = "Hammad"
+// let arr = Array.from(name)
+// console.log(arr)
+
+// for(let i in a)
+// {
+//     console.log(i)
+// }
+
+// Map, Filter and Reduce
+// let arr = [1,2,3,4,5]
+// let a = arr.map((value,index,array)=>{   // makes new array
+// //console.log(value,index,array)
+//    return value + index
+// })
+// console.log(a)
+
+// let arr1 = [1,2,3,4,5]
+// let a1 = arr.filter((value)=>{
+//     return value < 3
+// })
+// console.log(a1)
+
+// let a2 = arr.reduce((value)=>{   // add every value
+//     return value + value
+// })
+// console.log(a2)
+
+// let a = Math.round(Math.random() * 10)
+// console.log(a)
 
 
 
