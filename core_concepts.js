@@ -205,6 +205,42 @@
 
 
 
+// console.log("Hello")
+// //alert("Hello")
+// console.log(console)
+// console.log("Hello")   // return something
+// console.error("error")   //used to show some error
+// console.assert(5 > 6)   //gives error if condition is false
+// let obj = {a:1,b:2}
+// console.table(obj)
+// console.warn("Do not drink soda")
+// console.info("Important information")
+// console.time("p1")  // how much time it take to process between time and timeEnd
+// console.timeEnd("p1")
+
+// alert("Hello")
+// let a = prompt("Enter the value of a","23")   //(,default value)
+// a = Number.parseInt(a)
+// document.write("Your number is " + a)
+// let write = confirm("Do you want to write to this page")
+// if(write)
+// {
+//     document.write("ok")
+// }
+// else{
+//     document.write("You choose No")
+// }
+
+//DOM - Document Object Model
+//windows can be used with console.log
+// window.console.log("Hello") 
+// console.log(document)
+// console.log(document.body)
+// document.body.style.backgroundColor="red"   // makes the body color red
+
+//BOM - Browser Object Model
+// alert,prompt and confirm under this category 
+
 
 
 
