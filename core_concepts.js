@@ -241,6 +241,59 @@
 //BOM - Browser Object Model
 // alert,prompt and confirm under this category 
 
+// document.getElementsByClassName("name1").style.color = "yellow"
+// document.head
+// document.title
 
+// console.log(document.body.firstChild)
+// let a = document.body.firstChild
+// console.log(a.parentNode)
+// console.log(a.parentElement)
+// console.log(document.body.lastChild)
+// let arr = Array.from(document.body.childNodes)   // to make array
+// console.log(arr)
+// console.log(document.body.childNodes[0])
+
+// let b = document.body
+// console.log(b.firstChild)
+
+// const changebodycolor = () =>{
+//     document.body.firstElementChild.style.background = "red"
+// }
+
+// changebodycolor()
+
+// let a = document.body.firstElementChild.firstElementChild
+// console.log(a)
+// console.log(a.rows)
+// console.log(a.rows[0])
+// console.log(a.rows[1].rowIndex)
+
+// let a = document.getElementById("navbar1");
+// console.log(a);
+// a.style.fontSize = "20px";
+
+// let b = document.querySelectorAll(".hello");
+// console.log(b);
+// b.forEach(element => {
+//   element.style.background = "black";
+// });
+
+// let c = document.body.getElementsByTagName("ul");
+// console.log(c);
+// for (let i = 0; i < c.length; i++) {
+//   c[i].style.color = "yellow";
+// }
+
+// let id1 = document.getElementById("id1")
+// console.log(id1.matches(".box"))
+// const span1 = document.getElementById("#span1")
+// console.log(id1.closest(span1))
+// console.log(id1.contains(span1))
+
+// console.log(id1.innerHTML)  // only for elements
+// console.log(id1.outerHTML)
+// console.log(document.body.firstChild.data)
+// console.log(document.body.textContent)
 
 
