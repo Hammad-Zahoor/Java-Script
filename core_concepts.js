@@ -296,4 +296,106 @@
 // console.log(document.body.firstChild.data)
 // console.log(document.body.textContent)
 
+// let id1 = document.getElementById("id1")
+// let a = id1.getAttribute("class")
+// console.log(a)
+// console.log(id1.hasAttribute("class"))
+// console.log(id1.hasAttribute("style"))
+// id1.setAttribute("hidden","true")
+// let id2 = document.getElementById("id2")
+// id2.removeAttribute("class")
+// let id3 = document.getElementById("navbar1")
+// console.log(id3.dataset)
+// console.log(id3.dataset.game)
 
+// let a = document.getElementsByTagName("ul")[0]
+// console.log(a)
+// a.innerHTML = a.innerHTML + "<h1>Hello Sir!</h1>"
+// let div = document.createElement("div")
+// div.innerHTML = "<h1>Hello World</h1>"
+// a.append(div)
+// a.prepend(div)
+// a.before(div)  // out of container
+// a.after(div)
+// a.replaceWith(div)
+
+// let id = document.getElementById("id1")
+// id.insertAdjacentHTML('beforebegin','<div>Beforebegin</div>')
+// id.insertAdjacentHTML('beforeend','<div>Beforeend</div>')
+// id.insertAdjacentHTML('afterbegin','<div>Afterbegin</div>')
+// id.insertAdjacentHTML('afterend','<div>Afterend</div>')
+// id.remove()
+
+// let id = document.getElementById("id1")
+// id1.className = "red white-text"   // can be css styling in style.css
+// id1.classList.add("red")   // red can css style class
+// id1.classList.remove("red") 
+// id1.classList.append("red") 
+// id1.classList.toggle('red')
+
+// let a = setTimeout(function(){
+//     alert("Hello")
+// },2000)
+// console.log(a)
+// //clearTimeout(a)
+
+// const show = (a) =>{
+//     console.log("Yes, I am running after 2 seconds")
+// }
+// setTimeout(show,2000,1)
+
+// let b = setInterval(function(){
+//     alert("Hello after 2 seconds")
+// },2000)
+// clearInterval(b)
+
+// let b = prompt("Enter any number");
+// b = Number(b);
+// console.log(b);
+
+// let x = function(e) {
+//     alert("Hello bro");
+//     console.log(e);
+//     console.log(e.target);
+//     console.log(e.clientX, e.clientY);
+
+//     if (b > 0) {
+//         a.removeEventListener("click", x);
+//     }
+// };
+
+// let a = document.getElementsByTagName("button")[0];
+// a.addEventListener("click", x);
+
+// Synchronous programming
+// executes evry operation one by one (one after another)
+
+// Asynchronous Programming
+// execute after some time or in random order
+
+// function loadScript(src, callback) {
+//     var script = document.createElement("script");
+//     script.src = src;
+//     script.onload = function() {
+//         console.log("Script loaded successfully");
+//         callback(null,src);
+//     };
+//     script.onerror = function(){
+//         console.log("Error" + src)
+//         callback("New error comes in " + src)
+//     }
+//     document.body.appendChild(script);
+// }
+// function hello(error1,src) {
+//     alert("Hello" + src);
+//     console.log(error1)
+//     return
+// }
+// function hello(src) {
+//     alert("Hello" + src);
+// }
+
+// loadScript("core_concepts.js", hello);  // if error comes in script then error hello executes otherwise hello null comes
+
+// Pyramid of Doom or Callback Hell
+// code expands horizontally and traps itself in a continuous loop
