@@ -399,3 +399,182 @@
 
 // Pyramid of Doom or Callback Hell
 // code expands horizontally and traps itself in a continuous loop
+
+
+// Promises
+// let promise1 = new Promise(function(resolve,reject){
+//     console.log("Promise is pending")
+//     setTimeout(()=>{
+//         alert("I am new promise and fulfilled")
+//         resolve(true)
+//         //reject(new Error("I am an rejected"))
+//     },5000)
+// })
+// let promise2 = new Promise(function(rersolve,reject){
+//     console.log("Promise is pending")
+//     setTimeout(()=>{
+//         alert("I am new promise and fulfilled")
+//         //resolve(true)
+//         reject(new Error("I am rejected"))
+//     },5000)
+// })
+
+// promise1.then((value)=>{
+//     console.log(value)
+// })
+// promise2.catch((error)=>{
+//     console.log("error occured in proomise2")
+// })
+//console.log(promise1,promise2)   // parallely fired
+// promise1.then((value)=>{
+//     console.log(value)
+// }).catch((error)=>{
+//     console.log(error)
+// })
+
+// let p1 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         console.log("Resolved after 2 seconds");
+//         resolve(56);
+//     }, 2000);
+// });
+
+// p1.then((value) => {
+//     console.log(value);
+//     return new Promise((resolve, reject) => {
+//         console.log("Promise 2");
+//         resolve("Promise 2");
+//     });
+// }).then(() => {
+//     console.log("p3 resolved");
+// });
+
+// const loadscript = (src) => {
+//     return new Promise((resolve, reject) => {
+//         let script = document.createElement("script")
+//         script.src = src
+//         script.type = "text/javascript"
+//         document.body.appendChild(script)
+//         script.onload = () => {
+//             resolve(1)
+//         }
+//         script.onerror = () => {
+//             reject(0)
+//         }
+//     })
+// }
+
+// let p1 = loadscript("core_concepts.js")
+// p1.then((value) => {
+//     console.log(value)
+// }).catch((error)=>{
+// console.log("We are having a problem with loading javascript")
+// })
+
+// let p1 = new Promise((resolve,reject)=>{
+// setTimeout(()=>{
+//     console.log("I am resolved")
+//     resolve(1)
+// },3000)
+// })
+
+// p1.then((value)=>{
+// console.log(value)
+// return value
+// }).then((value)=>{
+// console.log("Yes!!!" + value)
+// })
+
+// let p1 = new Promise((resolve,reject)=>{
+// setTimeout(()=>{
+//     resolve("value 1")
+// },1000)
+// })
+// let p2 = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         reject("value 2")
+//     },2000)
+//     })
+
+// let promise_all = Promise.all([p1,p2])  // all promises at same time, if error comes then it stops all other execution
+// promise_all.then((value)=>{
+// console.log(value)
+// })
+// let promise_settled = Promise.allSettled([p1,p2])  // all promises at same time and run even one is rejected
+// promise_settled.then((value)=>{
+// console.log(value)
+// })
+// let promise_race = Promise.race([p1,p2])  // lowest execution time promise first even the rejected one
+// promise_race.then((value)=>{
+// console.log(value)
+// })
+// let promise_any = Promise.any([p1,p2])  // first resolved promise
+// promise_any.then((value)=>{
+// console.log(value)
+// })
+
+// async function Hello(){
+// let p1 = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         resolve("yes 1")
+//     },2000)
+// })
+// let p2 = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         resolve("yes 2")
+//     },5000)
+// })
+
+// console.log("Fetching p1")
+// let p11 = await p1
+// console.log("Completed p1")
+// console.log("Fetching p2")
+// let p22 = await p2
+// console.log("Completed p2")
+// return [p11,p22]
+// }
+
+// // async functions execute in parallel
+// // await functions wait for the prior processes to execute
+
+// Hello().then((x)=>{
+//     alert(x)
+// })
+
+// try and catch
+// setTimeout(() => {
+//     console.log("1 processing")
+// }, 1000)
+// try {
+//     console.log(hello); // Accessing undefined variable to trigger a ReferenceError
+//     throw new ReferenceError("Please check for error!");
+// } catch (error) {
+//     console.log(error); // Log the error object
+//     console.log(error.message); // Log the error message
+//     console.log(error.name); // Log the error name
+//     console.log(error.stack); // Log the error stack trace
+// }
+// setTimeout(() => {
+//     console.log("2 processing")
+// }, 3000)
+// setTimeout(() => {
+//     console.log("3 processing")
+// }, 4000)
+// setTimeout(() => {
+//     console.log("4 processing")
+// }, 6000)
+
+// finally
+// try{
+//     console.log(Program)
+//     console.log("try executed")
+// }
+// catch{
+//     console.log("This is an error")
+//     console.log(p)
+// }
+// finally{  // finally assures that all the code in this clause run in every condition even errors comes in try and catch clause
+//     console.log("Yes executed")
+// }
+
+
