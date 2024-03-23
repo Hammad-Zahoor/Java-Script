@@ -586,3 +586,69 @@
 // }).then((value)=>{
 //     console.log(value)
 // })
+
+// const createTodo = async (todo) => {
+//     let options = {
+//         method: "POST",
+//         headers: {
+//             "Content-type": "application/json"
+//         },
+//         body: JSON.stringify(todo)
+//     }
+
+//     let response = await fetch('https://jsonplaceholder.typicode.com/posts', options)
+//     let data = await response.json()
+//     return data
+// }
+
+// let getdata = async (id) =>{
+//    let r = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
+//    let data1 = await r.json()
+//    return data1 
+// }
+
+// const mainFun = async () =>{
+//     let todo1 = { title: 'foo',
+//     body: 'bar',
+//     userId: 1,}
+//     let todo = await createTodo(todo1)
+//     console.log(todo)
+//     let get = await getdata(5)
+//     console.log(get)
+// }
+
+// mainFun()
+
+//Cookies
+// console.log(document.cookie)
+// document.cookie = "name = hammad1212"     // set call
+// document.cookie = "name1 = hammad121233"  ///add it not replace it
+// document.cookie = "name = hammad"  // 4KB for a data
+// let key = "applicant"
+// let value = "Zohaib"
+// document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)};path='/a'`
+// console.log(document.cookie)
+
+// key = "applicant";
+// value = "Zohaib";
+// let encodedKey = encodeURIComponent(key);
+// let encodedValue = encodeURIComponent(value);
+// document.cookie = `${encodedKey}=${encodedValue}; path=/a`//:expires="timestamp"`;
+// console.log(document.cookie);
+
+// localstorage
+// localStorage.setItem("name","Hammad")
+// console.log(localStorage.getItem("name"))
+// //localStorage.removeItem("name")
+// //localStorage.clear()
+// console.log(localStorage.length)
+// console.log(localStorage.key(0))
+
+//Session Storage
+// sessionStorage.setItem("name","Hammad")   // data remains for only current browser
+// // same functions
+
+// window.onstorage = (e) =>{
+//     alert("changed")
+//     console.log(e)    // change when value for some is changed
+// }
