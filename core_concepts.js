@@ -11,7 +11,6 @@
 // const d = 9
 // console.log(d)
 
-
 // // Primitives and Objects
 // console.log("Primitives")  // 7 data-types
 // let a = null
